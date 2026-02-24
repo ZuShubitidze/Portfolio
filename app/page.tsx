@@ -166,11 +166,12 @@ export default function Home() {
           </li>
           {/* Personal Website */}
           <li className="flex flex-col gap-5">
-            <h1 className="text-2xl font-bold">Project 3 - Blog</h1>
+            <h1 className="text-2xl font-bold">Project 4 - Marble</h1>
             {/* Description */}
             <section>
               <p className="text-2xl">
-                A small website I've made, offering products and services.
+                A small website I've made for an acquaintance, offering marble
+                products and services.
               </p>
             </section>
             {/* Images */}
