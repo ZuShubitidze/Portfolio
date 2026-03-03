@@ -3,11 +3,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen my-8 mx-30 flex flex-col gap-10">
+    <main className="min-h-screen my-8 mx-2 md:mx-30 flex flex-col gap-10">
       {/* Theme Toggle */}
       <span className="absolute top-4 right-4">
         <ModeToggle />
       </span>
+      {/* Introduction */}
       <section className="container mx-auto flex flex-col gap-10 items-center justify-center">
         <h1 className="text-3xl font-bold">Welcome to my portfolio!</h1>
         {/* Description */}
@@ -202,6 +203,48 @@ export default function Home() {
                 className="text-3xl font-bold dark:text-blue-400 dark:hover:bg-amber-200 text-indigo-800 hover:bg-blue-400 p-6 transition-all duration-500"
               >
                 Website
+              </a>
+            </section>
+          </li>
+          {/* Fullstack Blog */}
+          <li className="flex flex-col gap-5">
+            <h1 className="text-2xl font-bold">Project 5 - Fullstack Blog</h1>
+            <p className="text-2xl">
+              This is a project that I've been working on lately, fullstack
+              website.
+            </p>
+            <p>
+              On this webapp, users can register / login, create posts, comment,
+              and reply, that has reddit-like design. User can see posts and
+              comments without authorization, but can't make them.
+            </p>
+            <h3>Tools used:</h3>
+            <p>Backend - Node.js, Express, Prisma, Bcrypt / JWT.</p>
+            <p>Frontend - React / Vite, Tailwind / Shadcn.</p>
+            <p>
+              When users visit app, they can register / login. Even without it,
+              they will be able to see posts and comments. On registration,
+              backend will accept name, email and password used, hash password,
+              and create jwt cookie. In other words, on registration or login,
+              users cookie will be created and user will be able to create posts
+              or comment. On logout, cookie is removed. Data is stored in Neon.
+            </p>
+            {/* Images */}
+            <section className="flex flex-col md:flex-row gap-4">
+              <Image
+                src="/Fullstack.png"
+                alt="Fullstack"
+                width={800}
+                height={400}
+              />
+            </section>
+            {/* Links */}
+            <section className="flex flex-row gap-10">
+              <a
+                href="https://github.com/ZuShubitidze/FullStack.git"
+                className="text-3xl font-bold dark:text-blue-400 dark:hover:bg-amber-200 text-indigo-800 hover:bg-blue-400 p-6 transition-all duration-500"
+              >
+                Github Repo
               </a>
             </section>
           </li>
